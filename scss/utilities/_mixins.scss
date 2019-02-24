@@ -1,0 +1,55 @@
+// MIXINS
+
+@mixin flexy($flex-dir, $just-con) {
+  display: flex;
+  flex-direction: $flex-dir;
+  justify-content: $just-con;
+}
+
+// BUTTONS
+
+@mixin btn($btn-color) {
+  border: none;
+  color: $white;
+  background-color: $btn-color;
+  border-radius: $br;
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  @media (min-width: $break-m) {
+    border: none;
+    color: $white;
+    background-color: $btn-color;
+    border-radius: $br;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem 0.5rem;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    width: 100%;
+  }
+}
+
+// GRID-COL
+
+@mixin grid-col($color) {
+  background-color: $color;
+  border-radius: $br;
+  padding: 1rem 1rem;
+  margin: 0.2rem 0.6rem;
+  font-weight: $font-weight-bold;
+  @media (min-width: $break-m) {
+    max-height: 50px;
+  }
+}
+
+//  ADJACENT SILBLING MARGINS
+
+@mixin doubly($margin: 1em) {
+  & + & {
+    margin-left: $margin;
+    @content;
+  }
+}
+
+

@@ -1,0 +1,18 @@
+// FORMS
+
+.form {
+  @include flexy(column, center);
+  &__label--hidden {
+    display: none;
+  }
+  &__input {
+    border: none;
+    border-bottom: $br solid $color-primary;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+    font-weight: $font-weight-bold;
+  }
+  @media (min-width: $break-m) {
+    margin-left: 3rem;
+  }
+}

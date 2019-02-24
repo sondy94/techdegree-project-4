@@ -1,0 +1,19 @@
+// BUTTONS
+
+.btn-- {
+  &default {
+    @include btn($color-btn-default);
+  }
+  &success {
+    @include btn($color-btn-success);
+  }
+  &error {
+    @include btn($color-btn-error);
+  }
+  &warning {
+    @include btn($color-btn-warning);
+  }
+  &info {
+    @include btn($color-btn-info);
+  }
+}

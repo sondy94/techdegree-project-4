@@ -1,0 +1,28 @@
+// TYPOGRAPHY
+
+
+
+.headline-- {
+    &primary {
+    color: $color-primary;
+    font-family: $stack-abolition;
+    margin-left: 1rem;
+    letter-spacing: -1px;
+    }
+    &secondary {
+    font-family: $stack-abolition;
+    font-weight: $font-weight-light;
+    }
+}
+
+.blockquote {
+    border-left: 7px solid $color-primary;
+    border-top-left-radius: $br;
+    border-bottom-left-radius: $br;
+    padding-left: 1rem;
+    margin: 2rem 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+  

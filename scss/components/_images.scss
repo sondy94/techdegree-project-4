@@ -1,0 +1,23 @@
+// IMAGES
+
+.grid__col--3 .link {
+  @include flexy(row, center);
+  margin: 1.2rem 0.5rem;
+}
+
+.grid__row:nth-of-type(4) .grid__col--6 {
+  @include flexy(column, center);
+}
+
+.img-- {
+  &frame {
+    width: 90%;
+    border: 1px solid grey;
+    padding: 1rem 1rem;
+    margin: auto;
+  }
+  &avatar {
+    padding: 1rem 1rem;
+    margin: auto;
+  }
+}

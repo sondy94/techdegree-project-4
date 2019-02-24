@@ -1,0 +1,69 @@
+// COLORS
+
+$viking: #58e1c1;
+$malibu: #51ddfc;
+$emerald: #63cc82;
+$sunglo: #e4757a;
+$coral: #fd7856;
+$purple_mountains_majesty: #927bc1;
+$riptide: #80e8d1;
+$shakespeare: #3fabca;
+$anakiwa: #7ee6fd;
+$french_lilac: #deb2ee;
+$vista_blue: #88d9a0;
+$sea_pink: #ec9fa3;
+$vivid_tangerine: #fd9f85;
+$white: #fff;
+
+// COLOR-FUNCTIONS
+
+$color-primary: $viking;
+$color-secondary: $malibu;
+
+// COLOR-BUTTONS
+
+$color-btn-default: $malibu;
+$color-btn-success: $emerald;
+$color-btn-error: $sunglo;
+$color-btn-warning: $coral;
+$color-btn-info: $purple_mountains_majesty;
+
+// COLOR-COLS
+
+$color-col-3: $french_lilac;
+$color-col-4: $anakiwa;
+$color-col-5: $vista_blue;
+$color-col-6: $shakespeare;
+$color-col-7: $sea_pink;
+$color-col-8: $vivid_tangerine;
+$color-col-12: $riptide;
+
+// FONT STACK
+
+$stack-sans-serif: Helvetica, Arial, sans-serif;
+$stack-helvetica: "Helvetica Neue", $stack-sans-serif;
+$stack-abolition: "Abolition Regular", $stack-sans-serif;
+
+// BORDER-RADIUS
+
+$br: 5px;
+
+// FONT WEIGHT
+
+$font-weight-light: 100;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// BREAKPOINTS
+
+$break-xs: 420px;
+$break-s: 768px;
+$break-m: 769px;
+$break-l: 1024px;
+
+// Grid
+
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-cont-max-w: 1050px;

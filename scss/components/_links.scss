@@ -1,0 +1,38 @@
+// LINKS
+
+.nav a:link {
+  text-decoration: none;
+  color: #808080;
+}
+
+.nav a:active {
+  text-decoration: none;
+  color: #808080;
+}
+
+.nav a:visited {
+  text-decoration: none;
+  color: #808080;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: $color-primary;
+  padding: 1rem 8rem;
+  border-radius: $br;
+  margin: 1rem -8rem;
+  @media (min-width: $break-m) {
+    padding: 1rem 1rem;
+    margin: 1rem -1rem;
+  }
+}
+
+.link {
+  color: $color-secondary;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+}
