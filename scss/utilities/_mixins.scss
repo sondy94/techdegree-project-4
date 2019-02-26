@@ -1,3 +1,26 @@
+// Media Query
+
+@mixin mq($break){
+  @if $break == 'med' {
+    @media (min-width: $break-m) {
+      @content;
+    }
+  }
+
+  @else if $break == 'large' {
+    @media (min-width: $break-l) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Oops! Please enter either 'med' or 'large' as argument for this mixin. You entered: '#{$break}'.";
+  }
+}
+
+
+
+
 // MIXINS
 
 @mixin flexy($flex-dir, $just-con) {
@@ -17,7 +40,7 @@
   margin: 0.8rem 0;
   text-transform: uppercase;
   font-weight: $font-weight-bold;
-  @media (min-width: $break-m) {
+  @include mq(med) {
     border: none;
     color: $white;
     background-color: $btn-color;
@@ -38,7 +61,7 @@
   padding: 1rem 1rem;
   margin: 0.2rem 0.6rem;
   font-weight: $font-weight-bold;
-  @media (min-width: $break-m) {
+  @include mq(med) {
     max-height: 50px;
   }
 }
